@@ -1,0 +1,19 @@
+{
+  "name": "todo-list-learning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beginner-friendly full-stack todo app for learning frontend, backend, and db roles.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  },
+  "keywords": [
+    "todo",
+    "frontend",
+    "backend",
+    "database"
+  ],
+  "author": "",
+  "license": "MIT"
+}

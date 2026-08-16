@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-labelledby="page-title">
+        <div class="title-row">
+          <div>
+            <p class="eyebrow">Full-stack practice</p>
+            <h1 id="page-title">Todo List</h1>
+          </div>
+          <div class="counter" aria-live="polite">
+            <span id="remaining-count">0</span>
+            <span>left</span>
+          </div>
+        </div>
+
+        <form id="todo-form" class="todo-form">
+          <label class="sr-only" for="todo-input">할 일</label>
+          <input id="todo-input" name="title" type="text" placeholder="오늘 할 일을 입력하세요" autocomplete="off" />
+          <button type="submit">Add</button>
+        </form>
+
+        <div class="status-row">
+          <div class="filters" aria-label="Todo filters">
+            <button class="filter-button is-active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="active">Active</button>
+            <button class="filter-button" type="button" data-filter="done">Done</button>
+          </div>
+          <p id="status-message" class="status-message" role="status"></p>
+        </div>
+
+        <ul id="todo-list" class="todo-list" aria-label="Todo list"></ul>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
